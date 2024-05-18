@@ -1,0 +1,164 @@
+/* Responsive desinging */
+/* For screens smaller than 750px */
+
+/* For screens between 400px and 749px */
+/* For screens smaller than 550px */
+@media screen and (max-width: 550px) {
+    .hero h1 {
+        font-size: 25px;
+    }
+    textarea {
+        width: calc(100% - 20px);
+        height: 150px;
+        font-size: 12px;
+    }
+    .row {
+        width: calc(100% - 20px);
+    }
+}
+
+/* For screens between 550px and 750px */
+@media screen and (min-width: 551px) and (max-width: 750px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+    textarea {
+        width: calc(100% - 40px);
+        height: 180px;
+        font-size: 13px;
+    }
+    .row {
+        width: calc(100% - 40px);
+    }
+}
+
+/* For screens between 750px and 1000px */
+@media screen and (min-width: 751px) and (max-width: 1000px) {
+    .hero h1 {
+        font-size: 35px;
+    }
+    textarea {
+        width: calc(100% - 60px);
+        height: 200px;
+        font-size: 14px;
+    }
+    .row {
+        width: calc(100% - 60px);
+    }
+}
+
+/* For screens between 1000px and 1400px */
+@media screen and (min-width: 1001px) and (max-width: 1400px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+    textarea {
+        width: 500px;
+        height: 230px;
+        font-size: 16px;
+    }
+    .row {
+        width: 500px;
+    }
+}
+
+/* For screens larger than 1400px */
+@media screen and (min-width: 1401px) {
+    .hero h1 {
+        font-size: 45px;
+    }
+    textarea {
+        width: 600px;
+        height: 250px;
+        font-size: 18px;
+    }
+    .row {
+        width: 600px;
+    }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'popins', sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg,#aa05d3,#0aa167);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; 
+      color: #fff;
+}
+.hero h1{
+    font-size: 45px;
+    font-weight: 900;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+.hero h1 span{
+    color:#ff2963;
+}
+textarea{
+    width: 600px;
+    height: 250px;
+    background: #403d84;
+    color: #fff;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+}
+textarea::placeholder{
+    font-size: 16px;
+    color: #ddd;
+}
+.row{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+button{
+    background: #ff2963;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+}
+button img{
+    width: 25px;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+select{
+    flex: 1;
+    background: #403d84;
+    color: #fff;
+    height: 50px;
+    padding: 0 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
+    appearance: none;
+    background-image: url(dropdown-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size:30px;
+    background-position-x:  calc(100% -20px);
+    background-position-x:  370px;
+    background-position-y:  10px;
+
+}
